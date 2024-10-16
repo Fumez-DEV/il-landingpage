@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4ff, #f8f9fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 15px;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 auto 20px auto; /* Center the line */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.social-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Color Adjustments for Lighter Pastel Look */
+.social-card.instagram { background-color: #FFE3E3; }
+.social-card.pinterest { background-color: #FFD8D8; color: #D43D3D; }
+.social-card.tiktok { background-color: #DFF9FA; }
+.social-card.youtube { background-color: #FFEDED; color: #C4302B; }
+.social-card.threads { background-color: #F1F1F1; color: #333; }
+.social-card.twitter { background-color: #E7F4FF; color: #1DA1F2; }
+
+.social-card.instagram:hover { background-color: #FFCFCF; }
+.social-card.pinterest:hover { background-color: #FFCCCC; }
+.social-card.tiktok:hover { background-color: #C8F2F5; }
+.social-card.youtube:hover { background-color: #FFDADA; }
+.social-card.threads:hover { background-color: #E0E0E0; }
+.social-card.twitter:hover { background-color: #CCE7FF; }
+
+/* Style for Maximum Community icon */
+.social-card.skool .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.social-card.skool {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.social-card.skool:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer for builder reference */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
