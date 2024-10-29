@@ -29,7 +29,7 @@ This site is hosted at [isaac-lasry.com](http://isaac-lasry.com), allowing publi
 To run the project locally:
 1. Clone this repository.
    ```bash
-   git clone https://github.com/username/isaac-lasry-landingpage.git
+   git clone https://github.com/Fumez-DEV/il-landingpage.git
 Open the index.html file in your preferred browser.
 
 ### License
